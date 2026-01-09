@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import axios from 'axios';
+import { API_ENDPOINTS } from '../config';
 
 const Dashboard = ({ user }) => {
   // Initialize with cached values for immediate display
@@ -46,7 +47,7 @@ const Dashboard = ({ user }) => {
       let newSummary = null;
 
       try {
-        const summaryResponse = await axios.get('http://localhost:8080/api/transactions/dashboard/summary', {
+        const summaryResponse = await axios.get(`${API_ENDPOINTS.TRANSACTIONS}/dashboard/summary`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         console.log('Dashboard summary response:', summaryResponse.data);
@@ -77,7 +78,7 @@ const Dashboard = ({ user }) => {
       }
 
       // Fetch ALL transactions from transactions table ONLY
-      const allTransactionsResponse = await axios.get('http://localhost:8080/api/transactions', {
+      const allTransactionsResponse = await axios.get(API_ENDPOINTS.TRANSACTIONS, {
         headers: { Authorization: `Bearer ${token}` }
       });
       const allTransactions = allTransactionsResponse.data || [];
@@ -213,7 +214,7 @@ const Dashboard = ({ user }) => {
   const generateReport = async (format) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:8080/api/transactions/user/reports?format=${format}`, {
+      const response = await axios.get(`${API_ENDPOINTS.TRANSACTIONS}/user/reports?format=${format}`, {
         headers: { Authorization: `Bearer ${token}` },
         responseType: format === 'PDF' ? 'blob' : 'text'
       });
