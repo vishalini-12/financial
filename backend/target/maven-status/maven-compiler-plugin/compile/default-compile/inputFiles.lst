@@ -17,6 +17,7 @@ C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledge
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\service\AuditService.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\JwtUtil.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\controller\TransactionController.java
+C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\CorsConfig.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\service\ReconciliationService.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\LedgerApplication.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\DatabaseHealthCheck.java
