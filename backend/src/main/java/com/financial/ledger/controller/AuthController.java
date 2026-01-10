@@ -16,12 +16,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(
-    origins = "https://financial-rouge.vercel.app",
-    allowedHeaders = "*",
-    allowCredentials = "true",
-    methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS}
-)
 public class AuthController {
 
     @Autowired
