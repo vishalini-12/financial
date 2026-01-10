@@ -1,1 +1,46 @@
-t 
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/target/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.production
+backend/.env
+frontend/.env.local
+
+# Build artifacts
+backend/target/
+frontend/build/
+*.jar
+*.war
+
+# Logs
+*.log
+logs/
+backend/logs/
+
+# Temporary files
+*.tmp
+*.temp
+-p/
+
+# Database files
+*.db
+*.trace
+backend/data/
+
+# Deployment files (these should be created during deployment)
+backend/railway.json
+frontend/vercel.json
