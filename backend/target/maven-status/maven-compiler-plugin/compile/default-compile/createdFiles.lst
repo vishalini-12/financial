@@ -6,7 +6,6 @@ com\financial\ledger\config\DatabaseHealthCheck.class
 com\financial\ledger\model\Transaction$Type.class
 com\financial\ledger\controller\AdminController.class
 com\financial\ledger\LedgerApplication.class
-com\financial\ledger\config\CorsConfig.class
 com\financial\ledger\model\Transaction$Status.class
 com\financial\ledger\controller\ReconciliationController.class
 com\financial\ledger\config\JwtAuthenticationFilter.class
