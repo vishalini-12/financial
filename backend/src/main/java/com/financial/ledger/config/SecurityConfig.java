@@ -4,25 +4,26 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfigurationSource;
 
 @Configuration
 public class SecurityConfig {
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+     @Bean
+     public SecurityFilterChain securityFilterChain(HttpSecurity http, CorsConfigurationSource corsConfigurationSource) throws Exception {
 
-        http
-            .cors(cors -> {})              // ✅ enable CORS
-            .csrf(csrf -> csrf.disable())  // ❌ disable CSRF
-            .authorizeHttpRequests(auth -> auth
-                .requestMatchers(
-                    "/api/auth/**",
-                    "/manifest.json",
-                    "/favicon.ico"
-                ).permitAll()
-                .anyRequest().authenticated()
-            );
+         http
+             .cors(cors -> cors.configurationSource(corsConfigurationSource))  // ✅ use custom CORS config
+             .csrf(csrf -> csrf.disable())  // ❌ disable CSRF
+             .authorizeHttpRequests(auth -> auth
+                 .requestMatchers(
+                     "/api/auth/**",
+                     "/manifest.json",
+                     "/favicon.ico"
+                 ).permitAll()
+                 .anyRequest().authenticated()
+             );
 
-        return http.build();
-    }
-}
+         return http.build();
+     }
+ }
