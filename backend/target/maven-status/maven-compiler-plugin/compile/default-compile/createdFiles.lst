@@ -6,6 +6,7 @@ com\financial\ledger\config\DatabaseHealthCheck.class
 com\financial\ledger\model\Transaction$Type.class
 com\financial\ledger\controller\AdminController.class
 com\financial\ledger\LedgerApplication.class
+com\financial\ledger\config\CorsConfig.class
 com\financial\ledger\model\Transaction$Status.class
 com\financial\ledger\controller\ReconciliationController.class
 com\financial\ledger\config\JwtAuthenticationFilter.class
@@ -15,8 +16,10 @@ com\financial\ledger\model\TransactionDTO.class
 com\financial\ledger\service\UserDetailsServiceImpl.class
 com\financial\ledger\repository\ReconciliationRepository.class
 com\financial\ledger\model\AuditLog.class
+com\financial\ledger\config\RootController.class
 com\financial\ledger\model\User.class
 com\financial\ledger\controller\AuditLogController.class
+com\financial\ledger\config\SecurityCorsConfig.class
 com\financial\ledger\repository\UserRepository.class
 com\financial\ledger\service\PdfTransactionService.class
 com\financial\ledger\model\Transaction.class

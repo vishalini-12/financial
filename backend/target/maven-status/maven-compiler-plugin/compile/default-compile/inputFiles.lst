@@ -12,11 +12,14 @@ C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledge
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\SecurityConfig.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\repository\UserRepository.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\service\PdfTransactionService.java
+C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\SecurityCorsConfig.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\model\User.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\JwtAuthenticationFilter.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\service\AuditService.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\JwtUtil.java
+C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\RootController.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\controller\TransactionController.java
+C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\CorsConfig.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\service\ReconciliationService.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\LedgerApplication.java
 C:\Users\surya\Downloads\final_project\backend\src\main\java\com\financial\ledger\config\DatabaseHealthCheck.java
